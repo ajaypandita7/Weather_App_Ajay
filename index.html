@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Weather App</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<div class="mdiv">
+		<div class="container">
+			<h2 class="heading">WEATHER FORECAST</h2>
+			<form>
+				<div class="component">
+					<div>
+				<input type="text" name="city" id="city_name" placeholder="Enter a City" autofocus>
+			</div>
+				<div class="btn">
+				<button type="button" class="srch_btn" onclick="fetchCity()"><img src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-5.png" height="28px"> </button>
+			</div>
+		</div>
+		<br>
+		<div align="center" style="margin-top: -15px;">
+			<img src="https://icons.iconarchive.com/icons/papirus-team/papirus-apps/512/weather-icon.png" height="120px">
+	</div>
+	<div align="center" style="margin-top:-12px">
+		<span id="city">CITY NAME</span>
+		<br>
+		<span class="measurement" id="temp">0°C</span>
+	</div>
+	<div align="center" style="margin-top:20px">
+		<table width="100%" cellpadding="10px">
+			<tr align="center">
+				<td>
+					<h5 class="heading">WIND SPEED</h5>
+					<span class="measurement" id="wind_speed">0 km/hr</span>
+				</td>
+				<td>
+					<h5 class="heading">HUMIDITY</h5>
+					<span class="measurement" id="humidity">0 g/kg</span>
+				</td>
+			</tr>
+		</table>
+	</div>
+</form>
+</div>
+</div>
+</body>
+</html>
